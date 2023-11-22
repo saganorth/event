@@ -1,0 +1,159 @@
+
+.bodyBackground {
+  background-image: url('../public/img/paper.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.main {
+  background-color: #f8e2e4; 
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1200px; 
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+.text{
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin:  auto;
+
+}
+
+.ticketContainer {
+  background-color: #f8e2e4;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ticketTitle {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: black;
+  color: #f8e2e4;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #f8e2e4;
+  color: black;
+}
+
+.box {
+  flex-basis: 30%;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+
+.selectContainer {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.selectContainer select {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.selectContainer select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.popup button {
+  background-color: black;
+  color:#f8e2e4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.popup button:hover {
+  background-color: black;
+}
+@media (max-width: 939px) {
+  .main, .ticketContainer {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  .main, .ticketContainer {
+    margin: 1rem; 
+    padding: 1rem; 
+    max-width: 100%;  
+    min-height: 100vh; 
+  }
+}
+@media (max-width: 480px) {
+  .main, .ticketContainer {
+    margin: 1rem; 
+    padding: 1rem; 
+    min-height: 100vh; 
+  }
+
+  .ticketTitle {
+    font-size: 1.5rem; 
+  }
+
+  .btn, .btn-light {
+    padding: 0.75rem 1.5rem; 
+    font-size: 1rem; 
+  }
+
+  .box {
+    flex-basis: 100%;
+  }
+}; 

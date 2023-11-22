@@ -1,0 +1,50 @@
+
+
+.bodyBackground {
+    background-image: url('../public/img/paper.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    width: 100%; 
+  }
+  
+  .pageContent {
+   
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px; 
+    font-family: 'Courier New', Courier, monospace; 
+  }
+  
+
+ 
+
+  
+  @media (max-width: 768px) {
+    .pageContent {
+      margin: 1rem;
+      padding: 1rem;
+      max-width: 90%;
+       
+    }
+  
+  
+  
+  
+  
+    
+  }
+  
+  @media (max-width: 480px) {
+    .page-title {
+      font-size: 1.5rem;
+      
+    }
+  
+    
+  }
+  

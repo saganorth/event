@@ -1,0 +1,25 @@
+.footer {
+  background-color: #f8e2e4; 
+  color: #333; 
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace; 
+  padding: 1.5rem 0;
+ 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 1rem;
+  }
+
+  .productList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .productList {
+    grid-template-columns: 1fr;
+  }
+}
